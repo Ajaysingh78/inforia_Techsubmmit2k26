@@ -110,7 +110,7 @@ function animate(){
 }animate();
 
 // COUNTDOWN
-const eventDate=new Date('2026-03-28T09:00:00');
+const eventDate=new Date('2026-03-28T23:59:59');
 function tick(){
   const now=new Date(),diff=eventDate-now;
   if(diff<=0){document.getElementById('countdown').innerHTML='<div style="color:var(--neon-cyan);font-family:Orbitron,monospace;font-size:1.5rem;letter-spacing:4px;">EVENT IS LIVE ⚡</div>';return;}
