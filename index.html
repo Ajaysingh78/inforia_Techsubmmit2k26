@@ -4,18 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inforia Hackathon 2026 — Innovate for Real Impact</title>
+  <title>Inforia Hackathon 2026 — Shortlisted Teams Announced</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
   <canvas id="particle-canvas"></canvas>
@@ -26,8 +23,8 @@
     <a href="#about" onclick="closeMobileNav()">About</a>
     <a href="#themes" onclick="closeMobileNav()">Themes</a>
     <a href="#structure" onclick="closeMobileNav()">Structure</a>
-    <a href="#eligibility" onclick="closeMobileNav()">Eligibility</a>
-    <a href="#register" onclick="closeMobileNav()">Register</a>
+    <a href="#results" onclick="closeMobileNav()">Results</a>
+    <a href="#faq" onclick="closeMobileNav()">FAQ</a>
   </div>
 
   <!-- NAV -->
@@ -37,10 +34,10 @@
       <li><a href="#about">About</a></li>
       <li><a href="#themes">Themes</a></li>
       <li><a href="#structure">Structure</a></li>
-      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#results">Results</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <button class="nav-cta" onclick="scrollToRegister()">Register Now</button>
+    <a href="#results" class="nav-results-badge">🏆 View Results</a>
     <div class="hamburger" onclick="openMobileNav()">
       <span></span><span></span><span></span>
     </div>
@@ -51,21 +48,17 @@
     <div class="hero-grid"></div>
     <div class="hero-scanline"></div>
     <div class="hero-content">
-      <div class="hero-badge">⚡INDIA'S BOLDEST INNOVATION CHALLENGE</div>
+      <div class="hero-badge">🏆 ROUND 1 RESULTS — OFFICIALLY ANNOUNCED</div>
       <h1 class="hero-title">
-        <span class="title-inforia glitch" data-text="INFORIA"> INFORIA TECHSUMMIT</span>
+        <span class="title-inforia glitch" data-text="INFORIA TECHSUMMIT">INFORIA TECHSUMMIT</span>
         <span class="title-hack">HACKATHON</span>
       </h1>
       <div class="hero-year">— 2 0 2 6 —</div>
-      <p class="hero-subtitle">Innovate for Real Impact</p>
-      <p class="hero-tagline">One Day · Real Problems · <span>Breakthrough Solutions</span></p>
+      <p class="hero-subtitle">Shortlisted Teams Announced</p>
+      <p class="hero-tagline">Round 1 Complete · <span>25 Teams Qualified</span> · Grand Finale — 1st April</p>
       <div class="hero-btns">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWEB7xCmLMaDjFY7oHzCrHnvKIRwQggESpeERtd0HafY3BiA/viewform?usp=header"
-          class="btn-primary">⚡ Register Now</a>
+        <a href="#results" class="btn-primary">🏆 View Shortlisted Teams</a>
 
-        <a href="files/Techsummit2k26-guidelines.pdf" download class="btn-secondary">↓ Download Guidelines</a>
-
-        <a href="files/ppt-format.pptx" download class="btn-secondary">↓ Download PPT FORMAT</a>
       </div>
       <div class="countdown-container" id="countdown">
         <div class="countdown-item"><span class="countdown-num" id="cd-days">00</span><span
@@ -78,8 +71,7 @@
             class="countdown-label">SECS</span></div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>SCROLL</span>
+    <div class="hero-scroll"><span>SCROLL</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -135,43 +127,37 @@
         <div class="section-line" style="margin:16px auto 0;"></div>
       </div>
       <div class="themes-grid">
-        <div class="theme-card reveal" style="transition-delay:0.1s">
-          <span class="theme-icon">🏫</span>
+        <div class="theme-card reveal" style="transition-delay:0.1s"><span class="theme-icon">🏫</span>
           <div class="theme-name">Smart Campus</div>
           <div class="theme-desc">Redefine the college experience through technology, automation, and intelligent
             systems.</div>
           <div class="theme-tag">CAMPUS TECH</div>
         </div>
-        <div class="theme-card reveal" style="transition-delay:0.15s">
-          <span class="theme-icon">🤖</span>
+        <div class="theme-card reveal" style="transition-delay:0.15s"><span class="theme-icon">🤖</span>
           <div class="theme-name">AI & Emerging Tech</div>
           <div class="theme-desc">Harness artificial intelligence, ML, blockchain, and next-gen tools to solve
             tomorrow's problems today.</div>
           <div class="theme-tag">AI / ML / WEB3</div>
         </div>
-        <div class="theme-card reveal" style="transition-delay:0.2s">
-          <span class="theme-icon">🌐</span>
+        <div class="theme-card reveal" style="transition-delay:0.2s"><span class="theme-icon">🌐</span>
           <div class="theme-name">Social Impact</div>
           <div class="theme-desc">Build solutions that empower communities, bridge gaps, and drive inclusive growth.
           </div>
           <div class="theme-tag">FOR EVERYONE</div>
         </div>
-        <div class="theme-card reveal" style="transition-delay:0.25s">
-          <span class="theme-icon">🧬</span>
+        <div class="theme-card reveal" style="transition-delay:0.25s"><span class="theme-icon">🧬</span>
           <div class="theme-name">Healthcare</div>
           <div class="theme-desc">Revolutionize patient care, diagnostics, and wellness through innovation and
             compassion.</div>
           <div class="theme-tag">MEDTECH</div>
         </div>
-        <div class="theme-card reveal" style="transition-delay:0.3s">
-          <span class="theme-icon">🌱</span>
+        <div class="theme-card reveal" style="transition-delay:0.3s"><span class="theme-icon">🌱</span>
           <div class="theme-name">Sustainability</div>
           <div class="theme-desc">Create green solutions for climate, energy, waste, and a planet worth inheriting.
           </div>
           <div class="theme-tag">CLIMATE / GREEN</div>
         </div>
-        <div class="theme-card reveal" style="transition-delay:0.35s">
-          <span class="theme-icon">💡</span>
+        <div class="theme-card reveal" style="transition-delay:0.35s"><span class="theme-icon">💡</span>
           <div class="theme-name">Open Innovation</div>
           <div class="theme-desc">No limits. Any domain. Any problem. Your unique vision gets a platform here.</div>
           <div class="theme-tag">OPEN TRACK</div>
@@ -192,7 +178,7 @@
         <div class="tl-item">
           <div class="tl-left reveal-left">
             <div class="tl-content">
-              <div class="tl-round">ROUND 01</div>
+              <div class="tl-round">ROUND 01 — COMPLETE ✓</div>
               <div class="tl-title">Idea Submission Phase</div>
               <ul class="tl-list">
                 <li>PowerPoint presentation required</li>
@@ -215,13 +201,13 @@
           </div>
           <div class="tl-right reveal-right">
             <div class="tl-content">
-              <div class="tl-round">ROUND 02</div>
-              <div class="tl-title">Offline Finale Round</div>
+              <div class="tl-round">ROUND 02 — UPCOMING ⚡</div>
+              <div class="tl-title">Grand Finale — 1st April 2026</div>
               <ul class="tl-list">
                 <li>Shortlisted teams advance</li>
-                <li>Build your working prototype</li>
+                <li>ICOT Seminar Hall, IES College of Technology</li>
+                <li>09:00 AM – 04:00 PM</li>
                 <li>Present live before expert jury</li>
-                <li>Q&A with evaluators</li>
                 <li>Winners announced same day</li>
               </ul>
             </div>
@@ -251,8 +237,7 @@
           <div class="elig-icon">👥</div>
           <div class="elig-text">
             <h4>Team Size: 3–5</h4>
-            <p>Minimum 3 and maximum 5 per team with at least one female member. Balance your skills strategically. .
-            </p>
+            <p>Minimum 3 and maximum 5 per team with at least one female member.</p>
           </div>
         </div>
         <div class="elig-card reveal" style="transition-delay:0.2s">
@@ -273,20 +258,17 @@
     </div>
   </section>
 
-
-
   <!-- EVALUATION -->
   <section id="evaluation">
     <div class="section-inner">
       <div class="reveal" style="text-align:center;margin-bottom:60px;">
-        <div class="section-label" style="text-align:center;">// 06 — EVALUATION CRITERIA</div>
+        <div class="section-label" style="text-align:center;">// 05 — EVALUATION CRITERIA</div>
         <h2 class="section-title" style="display:inline-block;">How You'll Be Judged</h2>
         <div class="section-line" style="margin:16px auto 0;"></div>
       </div>
       <div class="eval-grid">
         <div class="eval-card reveal" style="transition-delay:0.05s" data-pct="90">
-          <div class="eval-circle">
-            <svg width="100" height="100" viewBox="0 0 100 100">
+          <div class="eval-circle"><svg width="100" height="100" viewBox="0 0 100 100">
               <circle class="bg-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" />
               <circle class="progress-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" stroke="url(#grad1)" />
               <defs>
@@ -295,14 +277,11 @@
                   <stop offset="100%" style="stop-color:#00f5ff" />
                 </linearGradient>
               </defs>
-            </svg>
-            <span class="eval-percent">90%</span>
-          </div>
+            </svg><span class="eval-percent">90%</span></div>
           <div class="eval-name">Innovation</div>
         </div>
         <div class="eval-card reveal" style="transition-delay:0.1s" data-pct="85">
-          <div class="eval-circle">
-            <svg width="100" height="100" viewBox="0 0 100 100">
+          <div class="eval-circle"><svg width="100" height="100" viewBox="0 0 100 100">
               <circle class="bg-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" />
               <circle class="progress-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" stroke="url(#grad2)" />
               <defs>
@@ -311,14 +290,11 @@
                   <stop offset="100%" style="stop-color:#ff007f" />
                 </linearGradient>
               </defs>
-            </svg>
-            <span class="eval-percent">85%</span>
-          </div>
+            </svg><span class="eval-percent">85%</span></div>
           <div class="eval-name">Feasibility</div>
         </div>
         <div class="eval-card reveal" style="transition-delay:0.15s" data-pct="80">
-          <div class="eval-circle">
-            <svg width="100" height="100" viewBox="0 0 100 100">
+          <div class="eval-circle"><svg width="100" height="100" viewBox="0 0 100 100">
               <circle class="bg-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" />
               <circle class="progress-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" stroke="url(#grad3)" />
               <defs>
@@ -327,14 +303,11 @@
                   <stop offset="100%" style="stop-color:#ff007f" />
                 </linearGradient>
               </defs>
-            </svg>
-            <span class="eval-percent">80%</span>
-          </div>
+            </svg><span class="eval-percent">80%</span></div>
           <div class="eval-name">Prototype Quality</div>
         </div>
         <div class="eval-card reveal" style="transition-delay:0.2s" data-pct="88">
-          <div class="eval-circle">
-            <svg width="100" height="100" viewBox="0 0 100 100">
+          <div class="eval-circle"><svg width="100" height="100" viewBox="0 0 100 100">
               <circle class="bg-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" />
               <circle class="progress-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" stroke="url(#grad4)" />
               <defs>
@@ -343,14 +316,11 @@
                   <stop offset="100%" style="stop-color:#bf00ff" />
                 </linearGradient>
               </defs>
-            </svg>
-            <span class="eval-percent">88%</span>
-          </div>
+            </svg><span class="eval-percent">88%</span></div>
           <div class="eval-name">Practical Impact</div>
         </div>
         <div class="eval-card reveal" style="transition-delay:0.25s" data-pct="75">
-          <div class="eval-circle">
-            <svg width="100" height="100" viewBox="0 0 100 100">
+          <div class="eval-circle"><svg width="100" height="100" viewBox="0 0 100 100">
               <circle class="bg-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" />
               <circle class="progress-ring" cx="50" cy="50" r="45" fill="none" stroke-width="4" stroke="url(#grad5)" />
               <defs>
@@ -359,164 +329,204 @@
                   <stop offset="100%" style="stop-color:#00f5ff" />
                 </linearGradient>
               </defs>
-            </svg>
-            <span class="eval-percent">75%</span>
-          </div>
+            </svg><span class="eval-percent">75%</span></div>
           <div class="eval-name">Presentation Clarity</div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- WHY PARTICIPATE -->
   <section id="why-participate">
     <div class="section-inner">
-
-      ```
-      <!-- Section header -->
       <div class="reveal" style="text-align:center; margin-bottom:20px;">
-        <div class="section-label" style="text-align:center;">// 06.5 — WHY JOIN</div>
-        <h2 class="section-title" style="display:inline-block;">
-          Why Participate?
-        </h2>
+        <div class="section-label" style="text-align:center;">// 06 — WHY JOIN</div>
+        <h2 class="section-title" style="display:inline-block;">Why Participate?</h2>
         <div class="section-line" style="margin:16px auto 0;"></div>
       </div>
-
-      <!-- Hook quote -->
       <div class="wp-hook reveal" style="transition-delay:0.1s">
-        <p class="wp-hook-quote">
-          "Great ideas begin when someone decides to <em>build</em>, not just imagine."
-        </p>
+        <p class="wp-hook-quote">"Great ideas begin when someone decides to <em>build</em>, not just imagine."</p>
         <p class="wp-hook-sub">INFORIA TECH-SUMMIT 2K26</p>
       </div>
-
-      <!-- 6 benefit cards -->
       <div class="wp-grid">
-
-        <div class="wp-card reveal" style="transition-delay:0.05s">
-          <span class="wp-card-icon">📜</span>
+        <div class="wp-card reveal" style="transition-delay:0.05s"><span class="wp-card-icon">📜</span>
           <div class="wp-card-label">Recognition</div>
           <div class="wp-card-title">Official Participation Certificate</div>
-          <div class="wp-card-desc">
-            Every participant receives an official certificate, while top-performing teams
-            receive special recognition during the final event.
-          </div>
+          <div class="wp-card-desc">Every participant receives an official certificate, while top-performing teams
+            receive special recognition during the final event.</div>
         </div>
-
-        <div class="wp-card reveal" style="transition-delay:0.10s">
-          <span class="wp-card-icon">💡</span>
+        <div class="wp-card reveal" style="transition-delay:0.10s"><span class="wp-card-icon">💡</span>
           <div class="wp-card-label">Experience</div>
           <div class="wp-card-title">Build a Real Project</div>
-          <div class="wp-card-desc">
-            Transform your idea into a practical solution and gain real project-building
-            experience beyond classroom learning.
-          </div>
+          <div class="wp-card-desc">Transform your idea into a practical solution and gain real project-building
+            experience beyond classroom learning.</div>
         </div>
-
-        <div class="wp-card reveal" style="transition-delay:0.15s">
-          <span class="wp-card-icon">🚀</span>
+        <div class="wp-card reveal" style="transition-delay:0.15s"><span class="wp-card-icon">🚀</span>
           <div class="wp-card-label">Portfolio</div>
           <div class="wp-card-title">Strengthen Your Portfolio</div>
-          <div class="wp-card-desc">
-            A hackathon project becomes valuable proof of your creativity,
-            technical thinking, and execution ability.
-          </div>
+          <div class="wp-card-desc">A hackathon project becomes valuable proof of your creativity, technical thinking,
+            and execution ability.</div>
         </div>
-
-        <div class="wp-card reveal" style="transition-delay:0.20s">
-          <span class="wp-card-icon">🎯</span>
+        <div class="wp-card reveal" style="transition-delay:0.20s"><span class="wp-card-icon">🎯</span>
           <div class="wp-card-label">Feedback</div>
           <div class="wp-card-title">Present Before the Jury</div>
-          <div class="wp-card-desc">
-            Present your solution directly to judges and receive meaningful feedback
-            on your idea, logic, and implementation.
-          </div>
+          <div class="wp-card-desc">Present your solution directly to judges and receive meaningful feedback on your
+            idea, logic, and implementation.</div>
         </div>
-
-        <div class="wp-card reveal" style="transition-delay:0.25s">
-          <span class="wp-card-icon">🤝</span>
+        <div class="wp-card reveal" style="transition-delay:0.25s"><span class="wp-card-icon">🤝</span>
           <div class="wp-card-label">Connection</div>
           <div class="wp-card-title">Collaborate and Network</div>
-          <div class="wp-card-desc">
-            Meet students from different branches and academic years while building
-            solutions together.
-          </div>
+          <div class="wp-card-desc">Meet students from different branches and academic years while building solutions
+            together.</div>
         </div>
-
-        <div class="wp-card reveal" style="transition-delay:0.30s">
-          <span class="wp-card-icon">🏆</span>
+        <div class="wp-card reveal" style="transition-delay:0.30s"><span class="wp-card-icon">🏆</span>
           <div class="wp-card-label">Achievement</div>
           <div class="wp-card-title">Compete for Top Recognition</div>
-          <div class="wp-card-desc">
-            Top teams earn winner recognition, stage presence, and visibility during
-            Inforia Tech-Summit 2K26.
-          </div>
+          <div class="wp-card-desc">Top teams earn winner recognition, stage presence, and visibility during Inforia
+            Tech-Summit 2K26.</div>
         </div>
-
       </div>
-
-      <!-- Bottom quick-wins strip -->
       <div class="wp-strip reveal" style="transition-delay:0.35s">
-
-        <div class="wp-strip-item">
-          <span class="wp-strip-icon">🏆</span>
+        <div class="wp-strip-item"><span class="wp-strip-icon">🏆</span>
           <div class="wp-strip-text">Winner Recognition</div>
           <div class="wp-strip-sub">TOP TEAMS</div>
         </div>
-
-        <div class="wp-strip-item">
-          <span class="wp-strip-icon">📜</span>
+        <div class="wp-strip-item"><span class="wp-strip-icon">📜</span>
           <div class="wp-strip-text">Certificates</div>
           <div class="wp-strip-sub">PARTICIPANTS</div>
         </div>
-
-        <div class="wp-strip-item">
-          <span class="wp-strip-icon">🎁</span>
+        <div class="wp-strip-item"><span class="wp-strip-icon">🎁</span>
           <div class="wp-strip-text">Goodies</div>
           <div class="wp-strip-sub">EVENT DAY</div>
         </div>
-
-        <div class="wp-strip-item">
-          <span class="wp-strip-icon">🚀</span>
+        <div class="wp-strip-item"><span class="wp-strip-icon">🚀</span>
           <div class="wp-strip-text">Portfolio Value</div>
           <div class="wp-strip-sub">REAL EXPERIENCE</div>
         </div>
-
       </div>
-      ```
-
     </div>
   </section>
 
-  <!-- REGISTER -->
-
-  <section id="register">
+  <!-- ============================================================
+       SHORTLISTED TEAMS SECTION — RESULTS
+  ============================================================ -->
+  <section id="results">
     <div class="section-inner">
-      <div class="reveal" style="text-align:center;margin-bottom:60px;">
-        <div class="section-label" style="text-align:center;">// 07 — REGISTRATION</div>
-        <h2 class="section-title" style="display:inline-block;">Secure Your Spot we have Limited slots available</h2>
-        <div class="section-line" style="margin:16px auto 0;"></div>
+
+      <!-- Section Header -->
+      <div class="reveal" style="text-align:center;margin-bottom:40px;">
+        <div class="section-label" style="text-align:center;">// 07 — RESULTS</div>
+        <h2 class="section-title-gold" style="display:inline-block;">🎉 Shortlisted Teams<br />Announcement</h2>
+        <div class="section-line-gold" style="margin:16px auto 0;"></div>
       </div>
-      <div class="register-box reveal">
-        <div class="register-title">Ready to Build Something That Matters?</div>
-        <div class="register-subtitle">
-          Registration Fee 350 per team.<br />
-          Present your idea, build your prototype, gain recognition, and showcase your innovation.
+
+      <!-- Subtitle -->
+      <p class="results-subtitle reveal" style="transition-delay:0.1s">
+        Congratulations to the teams selected for the <strong>Grand Finale</strong> of INFORIA TECHSUBMIT 2K26
+        Hackathon.
+        Out of numerous submissions, your idea, creativity, and approach truly stood out.
+      </p>
+
+      <!-- Grand Finale Alert Banner -->
+      <div class="finale-alert reveal" style="transition-delay:0.12s">
+        <div class="finale-alert-icon">📌</div>
+        <div class="finale-alert-content">
+          <div class="finale-alert-title">Grand Finale Details — Mark Your Calendar</div>
+          <div class="finale-alert-details">
+            <div class="finale-detail"><span>📅</span> 1st April 2026</div>
+            <div class="finale-detail"><span>⏰</span> 09:00 AM – 04:00 PM</div>
+            <div class="finale-detail"><span>📍</span> ICOT Seminar Hall, IES College of Technology, Bhopal</div>
+          </div>
         </div>
-        <div class="register-btns">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWEB7xCmLMaDjFY7oHzCrHnvKIRwQggESpeERtd0HafY3BiA/viewform?usp=header"
-            class="btn-register primary">⚡ Register now</a>
-          <a href="https://chat.whatsapp.com/Bc54435ujYG04geVT1x4bW" class="btn-register whatsapp">💬 Join WhatsApp
-            Group</a>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="results-stats reveal" style="transition-delay:0.15s">
+        <div class="results-stat">
+          <span class="results-stat-num">25</span>
+          <div class="results-stat-label">TEAMS SHORTLISTED</div>
         </div>
-        <div style="margin-top:18px;font-size:14px;opacity:0.8;">
-          Open to all college students • Teams of 3–5 members • Multiple themes • Two rounds of competition
+        <div class="results-stat">
+          <span class="results-stat-num">Round 2</span>
+          <div class="results-stat-label">NEXT STAGE</div>
+        </div>
+        <div class="results-stat">
+          <span class="results-stat-num">1 Apr</span>
+          <div class="results-stat-label">GRAND FINALE DATE</div>
+        </div>
+        <div class="results-stat">
+          <span class="results-stat-num">🏆</span>
+          <div class="results-stat-label">WINNERS ANNOUNCED SAME DAY</div>
+        </div>
+      </div>
+
+      <!-- Congratulations Banner -->
+      <div class="congrats-banner reveal" style="transition-delay:0.2s">
+        <span class="congrats-trophy">🏆</span>
+        <div class="congrats-title">Final Round Qualified</div>
+        <div class="congrats-sub">You made it. Now build it. The stage is yours.</div>
+        <p class="congrats-tagline">
+          This is your opportunity to showcase your <strong>innovation</strong>, technical skills,
+          and problem-solving ability at the highest level.
+        </p>
+      </div>
+
+      <!-- ================================================================
+           TEAM CARDS GRID
+           To add/edit teams: update the `shortlistedTeams` array in <script>
+      ================================================================ -->
+      <div class="teams-grid" id="teamsGrid">
+        <!-- Dynamically injected by JavaScript -->
+      </div>
+
+
+
+      <!-- Next Instructions Coming Soon -->
+      <div class="next-instructions reveal" style="transition-delay:0.2s">
+        <div class="next-instr-header">
+          <div class="next-instr-pulse"></div>
+          <div class="next-instr-title">🚀 Next Steps — Important for All Shortlisted Teams</div>
+          <div class="next-instr-badge">LIVE UPDATE</div>
+        </div>
+        <p class="next-instr-desc">
+          All further communication, updates, and instructions will be shared only through the Official WhatsApp Group.
+          Team leaders are requested to ensure <strong>all members join the group</strong>. Please maintain
+          confidentiality — do not share the link outside your team.
+        </p>
+        <div class="next-instr-points">
+          <div class="next-instr-point"><span>1️⃣</span> Join the Official WhatsApp Group (Mandatory)</div>
+          <div class="next-instr-point"><span>2️⃣</span> Ensure all team members have joined</div>
+          <div class="next-instr-point"><span>3️⃣</span> Prepare your working prototype &amp; code</div>
+          <div class="next-instr-point"><span>4️⃣</span> Be ready for your final presentation</div>
+          <div class="next-instr-point"><span>📍</span> ICOT Seminar Hall, IES College of Technology</div>
+          <div class="next-instr-point"><span>📅</span> 1st April · 09:00 AM – 04:00 PM</div>
         </div>
 
+        <!-- Organizer Contacts -->
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <div class="contact-avatar">👤</div>
+            <div>
+              <div class="contact-name">Saurabh Kumar</div>
+              <div class="contact-role">IES President</div>
+              <div class="contact-num">📱 +91 7991153691</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-avatar">🧑‍💻</div>
+            <div>
+              <div class="contact-name">Ajay Rathore</div>
+              <div class="contact-role">Hackathon Organizer</div>
+              <div class="contact-num">📱 Contact via WhatsApp Group</div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
   <!-- FAQ -->
-
   <section id="faq" style="background:rgba(0,0,30,0.3);">
     <div class="section-inner">
       <div class="reveal" style="text-align:center;margin-bottom:60px;">
@@ -524,99 +534,73 @@
         <h2 class="section-title" style="display:inline-block;">Got Questions?</h2>
         <div class="section-line" style="margin:16px auto 0;"></div>
       </div>
-
-      ```
       <div class="faq-list">
-
         <div class="faq-item reveal">
           <div class="faq-q">Who can participate in Inforia Tech-Summit 2K26 Hackathon? <span class="faq-arrow">+</span>
           </div>
           <div class="faq-a">All currently enrolled college students can participate, including 1st year, 2nd year, 3rd
             year, and final year students. Students from any branch are welcome.</div>
         </div>
-
         <div class="faq-item reveal" style="transition-delay:0.05s">
           <div class="faq-q">What should be the team size? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Each team must have a minimum of 3 and a maximum of 5 members. Inter-branch and inter-year
-            teams are allowed.</div>
+          <div class="faq-a">Each team must have a minimum of 3 and a maximum of 5 members. Inter-branch teams are
+            allowed.</div>
         </div>
-
         <div class="faq-item reveal" style="transition-delay:0.1s">
           <div class="faq-q">Can first-year students participate even without technical experience? <span
               class="faq-arrow">+</span></div>
           <div class="faq-a">Yes. First-year students are strongly encouraged to participate. A strong idea, clear
             thinking, and teamwork matter as much as technical skills.</div>
         </div>
-
         <div class="faq-item reveal" style="transition-delay:0.15s">
           <div class="faq-q">Is coding compulsory to participate? <span class="faq-arrow">+</span></div>
           <div class="faq-a">No. Coding is not compulsory in Round 1. Teams can participate with a strong idea and
             presentation. However, shortlisted teams should present a prototype or proof of concept in the offline
             round.</div>
         </div>
-
         <div class="faq-item reveal" style="transition-delay:0.2s">
-          <div class="faq-q">What needs to be submitted in Round 1? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Teams must submit a PPT of 5 to 7 slides including problem statement, proposed solution,
-            target users, workflow, expected impact, and technology if applicable.</div>
-        </div>
-
-        <div class="faq-item reveal" style="transition-delay:0.25s">
           <div class="faq-q">How will teams be shortlisted for the offline round? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Submissions will be reviewed based on innovation, feasibility, relevance of problem,
-            clarity of presentation, and practical impact.</div>
+          <div class="faq-a">Submissions were reviewed based on innovation, feasibility, relevance of problem, clarity
+            of presentation, and practical impact.</div>
         </div>
-
+        <div class="faq-item reveal" style="transition-delay:0.25s">
+          <div class="faq-q">What happens in the Grand Finale? <span class="faq-arrow">+</span></div>
+          <div class="faq-a">Shortlisted teams will present their prototype or working model before the judging panel on
+            1st April 2026 at ICOT Seminar Hall, IES College of Technology, Bhopal (09:00 AM – 04:00 PM).</div>
+        </div>
         <div class="faq-item reveal" style="transition-delay:0.3s">
-          <div class="faq-q">What happens in the offline round? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Shortlisted teams will present their prototype or working model before the judging panel
-            and explain their complete solution.</div>
-        </div>
-
-        <div class="faq-item reveal" style="transition-delay:0.35s">
           <div class="faq-q">Is a fully completed project required in the final round? <span class="faq-arrow">+</span>
           </div>
           <div class="faq-a">No. A complete product is not necessary. A working prototype, partial implementation, or
             clear proof of concept is acceptable.</div>
         </div>
-
-        <div class="faq-item reveal" style="transition-delay:0.4s">
-          <div class="faq-q">Is there any registration fee? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Yes,Participation fees only 350 per team</div>
-        </div>
-
-        <div class="faq-item reveal" style="transition-delay:0.45s">
+        <div class="faq-item reveal" style="transition-delay:0.35s">
           <div class="faq-q">Will certificates be provided? <span class="faq-arrow">+</span></div>
           <div class="faq-a">Yes. Certificates will be provided to participants according to event guidelines.</div>
         </div>
-
-        <div class="faq-item reveal" style="transition-delay:0.5s">
+        <div class="faq-item reveal" style="transition-delay:0.4s">
           <div class="faq-q">How can participants contact organizers for doubts? <span class="faq-arrow">+</span></div>
-          <div class="faq-a">Participants can directly connect through the official WhatsApp group or contact the
-            organizing team mentioned on the website.</div>
+          <div class="faq-a">Contact Saurabh Kumar (IES President) at +91 7991153691, or reach out through the official
+            WhatsApp group.</div>
         </div>
-
       </div>
-      ```
-
     </div>
   </section>
-
-
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
         <div>
           <div class="footer-brand">IES UNIVERSITY BHOPAL</div>
-          <div class="footer-tagline">Inforia Techsummit Hackthon 2026 — Where ideas break boundaries and students build the
-            future. One day. Real problems. Real impact.</div>
+          <div class="footer-tagline">Inforia Techsummit Hackathon 2026 — Where ideas break boundaries and students
+            build the future. One day. Real problems. Real impact.</div>
           <div class="social-row">
             <a class="social-btn"
               href="https://www.instagram.com/ies_inforia_2k26?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              title="Instagram">📸</a>
-            <a class="social-btn" href="https://chat.whatsapp.com/Bc54435ujYG04geVT1x4bW" title="WhatsApp">💬</a>
-
+              target="_blank" title="Instagram">📸</a>
+            <!-- FIXED: corrected broken href -->
+            <a class="social-btn" href="https://chat.whatsapp.com/HaEw42Ei6Go2S2DkKJxF2d?mode=gi_t" target="_blank"
+              title="WhatsApp">💬</a>
           </div>
         </div>
         <div>
@@ -626,17 +610,16 @@
             <li><a href="#themes">Themes</a></li>
             <li><a href="#structure">Competition Structure</a></li>
             <li><a href="#eligibility">Eligibility</a></li>
-            <li><a href="#guidelines">PPT Guidelines</a></li>
-            <li><a href="#register">Register</a></li>
+            <li><a href="#results">Shortlisted Teams</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div>
           <div class="footer-h">Contact</div>
           <ul class="footer-links">
-            
-            <li><a href="#">📱 +91 7991153691</a></li>
-            <li><a href="#">📍 IES College Of Technology ,Bhopal</a></li>
-            <li><a href="#">📅 march 2026</a></li>
+            <li><a href="tel:+917991153691">📱 +91 7991153691</a></li>
+            <li><a href="#">📍 ICOT Seminar Hall, IES College of Technology, Bhopal</a></li>
+            <li><a href="#">📅 Grand Finale — 1st April 2026</a></li>
           </ul>
         </div>
       </div>
@@ -646,6 +629,8 @@
       </div>
     </div>
   </footer>
+
+
 
   <script src="script.js"></script>
 </body>
