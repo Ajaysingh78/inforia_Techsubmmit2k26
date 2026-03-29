@@ -53,7 +53,7 @@
           ? `<div class="team-dept">// ${team.department}</div>` : '';
 
         card.innerHTML = `
-          <div class="team-serial">#${String(index + 1).padStart(2, '0')}</div>
+          
           <div class="team-badge">
             <div class="team-badge-dot"></div>
             FINAL ROUND QUALIFIED
